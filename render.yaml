@@ -1,0 +1,17 @@
+databases:
+  - name: cctv_business
+    region: oregon
+
+services:
+  - type: web
+    name: cctv-business
+    region: oregon
+    plan: free
+    branch: main
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn core.wsgi:application --bind 0.0.0.0:$PORT

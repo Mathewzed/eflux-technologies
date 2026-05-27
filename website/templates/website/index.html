@@ -1,0 +1,501 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Installation & Electrical Services in Nairobi | E-Flux Technologies</title>
+
+    <meta name="description" content="E-Flux Technologies provides professional CCTV installation, electrical wiring, networking, and security systems across Kenya.">
+    <meta name="keywords" content="CCTV installation Nairobi, electrical wiring Kenya, security systems Kenya, CCTV installers, alarm systems Kenya, E-Flux Technologies">
+    <meta name="author" content="E-Flux Technologies">
+
+    <!-- Open Graph (Facebook/WhatsApp previews) -->
+    <meta property="og:title" content="E-Flux Technologies - CCTV & Electrical Experts">
+    <meta property="og:description" content="Professional CCTV installation, electrical wiring, and security solutions in Kenya.">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Hero Section -->
+    <section
+        id="home"
+        data-aos="fade-up"
+        class="relative h-screen bg-cover bg-center"
+        style="background-image: url('{% static 'images/hero.jpg' %}');">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <!-- Navbar -->
+        <nav class="relative z-10 flex justify-between items-center px-8 py-6">
+
+            <h1 class="text-2xl md:text-3xl font-bold text-red-600">
+                E-Flux Technologies
+            </h1>
+
+            <!-- Desktop Menu -->
+            <div class="space-x-8 hidden md:flex text-sm uppercase tracking-wide">
+
+                <a href="#home" class="hover:text-red-500 transition">Home</a>
+
+                <a href="#services" class="hover:text-red-500 transition">Services</a>
+
+                <a href="#projects" class="hover:text-red-500 transition">Projects</a>
+
+                <a href="#contact" class="hover:text-red-500 transition">Contact</a>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl">
+                ☰
+            </button>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/90 text-white px-8 py-6 space-y-4 absolute w-full left-0 top-20 z-50">
+
+            <a href="#home" class="block hover:text-red-500">Home</a>
+
+            <a href="#services" class="block hover:text-red-500">Services</a>
+
+            <a href="#projects" class="block hover:text-red-500">Projects</a>
+
+            <a href="#contact" class="block hover:text-red-500">Contact</a>
+
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 h-full flex items-center px-8 md:px-16">
+
+            <div class="max-w-3xl">
+
+                <p class="uppercase tracking-[6px] text-red-500 mb-4">
+                    Smart Security Solutions
+                </p>
+
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    CCTV Installation & Electrical Services Across Kenya
+                </h1>
+
+                <p class="mt-6 text-slate-300 text-lg leading-relaxed">
+                    E-Flux Technologies provides modern surveillance,
+                    networking, electrical wiring, and smart security
+                    solutions for homes and businesses.
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-4">
+
+                    <a href="#contact" class="bg-red-600 hover:bg-red-700 transition px-8 py-4 rounded-lg font-semibold inline-block">
+                        Get Quote
+                    </a>
+
+                    <a href="#services" class="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-lg font-semibold inline-block">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up" class="bg-slate-950 py-24 px-8">
+
+        <div class="text-center mb-16" data-aos="zoom-in">
+
+            <p class="text-red-500 uppercase tracking-[5px] mb-4">
+                Our Services
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold">
+                What We Provide
+            </h2>
+
+            <p class="text-slate-400 mt-6 max-w-2xl mx-auto">
+                We provide professional CCTV installation across Kenya, electrical wiring, alarm systems, networking, and smart security solutions for homes, businesses, and institutions.
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-800" data-aos="fade-up">
+
+                <div class="text-5xl mb-6">
+                    📹
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">
+                    CCTV Installation
+                </h3>
+
+                <p class="text-slate-400">
+                    Professional surveillance systems installation
+                    for homes and commercial buildings.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-800" data-aos="fade-up">
+
+                <div class="text-5xl mb-6">
+                    ⚡
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">
+                    Electrical Wiring
+                </h3>
+
+                <p class="text-slate-400">
+                    Complete electrical installation and
+                    wiring services for any property.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-800" data-aos="fade-up">
+
+                <div class="text-5xl mb-6">
+                    🛡️
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">
+                    Alarm Systems
+                </h3>
+
+                <p class="text-slate-400">
+                    Modern security alarm systems with
+                    24/7 monitoring capabilities.
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-800" data-aos="fade-up">
+
+                <div class="text-5xl mb-6">
+                    🔌
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4">
+                    Networking
+                </h3>
+
+                <p class="text-slate-400">
+                    Structured cabling and network infrastructure
+                    for smart buildings.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics Section -->
+    <section data-aos="fade-up" class="bg-black py-24 px-8">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+            <!-- Stat 1 -->
+            <div class="p-8 border border-slate-800 rounded-2xl bg-slate-950">
+
+                <h2 class="text-5xl font-bold text-red-500 mb-4">
+                    150+
+                </h2>
+
+                <p class="text-slate-400 uppercase tracking-[3px]">
+                    Projects Completed
+                </p>
+
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="p-8 border border-slate-800 rounded-2xl bg-slate-950">
+
+                <h2 class="text-5xl font-bold text-red-500 mb-4">
+                    100+
+                </h2>
+
+                <p class="text-slate-400 uppercase tracking-[3px]">
+                    Happy Clients
+                </p>
+
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="p-8 border border-slate-800 rounded-2xl bg-slate-950">
+
+                <h2 class="text-5xl font-bold text-red-500 mb-4">
+                    15+
+                </h2>
+
+                <p class="text-slate-400 uppercase tracking-[3px]">
+                    Years Experience
+                </p>
+
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="p-8 border border-slate-800 rounded-2xl bg-slate-950">
+
+                <h2 class="text-5xl font-bold text-red-500 mb-4">
+                    24/7
+                </h2>
+
+                <p class="text-slate-400 uppercase tracking-[3px]">
+                    Support Available
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up" class="bg-slate-950 py-24 px-8">
+
+        <div class="text-center mb-16">
+
+            <p class="text-red-500 uppercase tracking-[5px] mb-4">
+                Our Projects
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold">
+                Recent Installations
+            </h2>
+
+            <p class="text-slate-400 mt-6 max-w-2xl mx-auto">
+                Some of our recent CCTV, networking,
+                and electrical installation projects.
+            </p>
+
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            {% for project in projects %}
+
+            <div class="overflow-hidden rounded-2xl group relative">
+
+                <img
+                    src="{{ project.image.url }}"
+                    alt="Security project by E-Flux Technologies"
+                    class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+
+                    <h3 class="text-white text-xl font-semibold">
+                        {{ project.title }}
+                    </h3>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <!-- Image 1 -->
+            <div class="overflow-hidden rounded-2xl group">
+
+                <img
+                    src="{% static 'images/project1.jpg' %}"
+                    alt="CCTV installation project across Kenya"
+                    class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+            </div>
+
+            <!-- Image 2 -->
+            <div class="overflow-hidden rounded-2xl group">
+
+                <img
+                    src="{% static 'images/project2.jpg' %}"
+                    alt="Electrical wiring project in Kenya"
+                    class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+            </div>
+
+            <!-- Image 3 -->
+            <div class="overflow-hidden rounded-2xl group">
+
+                <img
+                    src="{% static 'images/project3.jpg' %}"
+                    alt="Security system installation"
+                    class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+            </div>
+
+            <!-- Image 4 -->
+            <div class="overflow-hidden rounded-2xl group">
+
+                <img
+                    src="{% static 'images/project4.jpg' %}"
+                    alt="Security projects gallery"
+                    class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254797191716"
+       target="_blank"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-5 rounded-full shadow-2xl z-50 transition duration-300">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="32"
+             height="32"
+             fill="currentColor"
+             viewBox="0 0 16 16">
+
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 8.042 0C3.61 0 0 3.61 0 8.042a7.93 7.93 0 0 0 1.072 3.964L0 16l4.103-1.063a7.98 7.98 0 0 0 3.939 1.01h.003c4.432 0 8.042-3.61 8.042-8.042a7.978 7.978 0 0 0-2.486-5.579zM8.045 14.5h-.003a6.5 6.5 0 0 1-3.314-.908l-.237-.141-2.434.63.649-2.373-.154-.244A6.48 6.48 0 0 1 1.5 8.042c.0 3.592 2.95 6.508 6.497 6.508zm3.615-4.873c-.197-.099-1.17-.577-1.352-.643-.181-.066-.313-.099-.445.1-.132.197-.511.643-.626.775-.115.132-.23.148-.428.05-.197-.1-.833-.307-1.587-.98-.586-.523-.981-1.17-1.096-1.368-.115-.197-.012-.304.087-.403.09-.09.197-.23.296-.346.099-.116.132-.198.198-.33.066-.132.033-.247-.017-.346-.05-.099-.445-1.074-.61-1.47-.16-.387-.323-.334-.445-.34l-.379-.007c-.132 0-.346.05-.527.247-.181.198-.692.676-.692 1.65 0 .973.709 1.914.808 2.046.099.132 1.395 2.13 3.384 2.987.473.204.842.326 1.13.417.475.151.907.13 1.249.079.381-.057 1.17-.478 1.336-.94.165-.462.165-.858.115-.94-.05-.083-.181-.132-.379-.23z"/></svg>
+
+    </a>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up" class="bg-black py-24 px-8">
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+
+            <!-- Left -->
+            <div>
+
+                <p class="text-red-500 uppercase tracking-[5px] mb-4">
+                    Contact Us
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                    Let's Secure Your Property
+                </h2>
+
+                <p class="text-slate-400 mb-10 leading-relaxed">
+                    Contact E-Flux Technologies for professional CCTV installation,
+                    electrical wiring, networking, and smart security solutions.
+                </p>
+
+                <div class="space-y-6 text-slate-300">
+
+                    <p>
+                        📞 Safaricom: +254 797 191 716
+                    </p>
+
+                    <p>
+                        📞 Airtel: +254 754 463 277
+                    </p>
+
+                    {% if settings.email %}
+                    <p>
+                        ✉️ {{ settings.email }}
+                    </p>
+                    {% else %}
+                    <p>
+                        ✉️ info@efluxtechnologies.com
+                    </p>
+                    {% endif %}
+
+                    <p>
+                        📍 Nairobi, Kenya
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div>
+
+                <form method="POST" class="space-y-4">
+
+                    {% csrf_token %}
+
+                    <input type="text" name="name" placeholder="Your Name"
+                           class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-red-500">
+
+                    <input type="email" name="email" placeholder="Email Address"
+                           class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-red-500">
+
+                    <input type="tel" placeholder="Phone Number"
+                           class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-red-500">
+
+                    <textarea name="message" placeholder="Message" rows="4"
+                              class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-red-500"></textarea>
+
+                    <button type="submit"
+                            class="w-full bg-red-600 hover:bg-red-700 transition px-6 py-4 rounded-lg font-semibold">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-8 px-8 border-t border-slate-800">
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-400">
+
+            <p>
+                © 2025 E-Flux Technologies. All rights reserved.
+            </p>
+
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-red-500">Privacy</a>
+                <a href="#" class="hover:text-red-500">Terms</a>
+                <a href="#" class="hover:text-red-500">Contact</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
